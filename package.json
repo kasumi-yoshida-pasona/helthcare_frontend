@@ -1,0 +1,22 @@
+{
+  "name": "lion_helthcare",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "pinia": "^2.0.23",
+    "vue": "^3.2.37",
+    "vue-router": "^4.1.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^3.1.0",
+    "sass": "^1.55.0",
+    "sass-loader": "^10.3.1",
+    "vite": "^3.1.0"
+  }
+}
