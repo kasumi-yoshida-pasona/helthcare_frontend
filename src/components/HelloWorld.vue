@@ -13,13 +13,13 @@ const count = ref(0)
 
   <div class="card">
     <button type="button" @click="count++">count is {{ count }}</button>
-    <p>
-      Edit
+    <p class="blue">
+      This text is blue！ Edit
       <code>components/HelloWorld.vue</code> to test HMR
     </p>
   </div>
 
-  <p>
+  <p class="blue">
     Check out
     <a href="https://vuejs.org/guide/quick-start.html#local" target="_blank"
       >create-vue</a
@@ -33,8 +33,14 @@ const count = ref(0)
   <p class="read-the-docs">Click on the Vite and Vue logos to learn more</p>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .read-the-docs {
   color: #888;
+}
+
+.card {
+  .blue {
+    color: blue;
+  }
 }
 </style>
