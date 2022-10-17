@@ -1,8 +1,12 @@
 <script setup>
+  import Accordion from '@/components/Accordion.vue'
 </script>
 
 <template>
-  This is test page.
+  <h1>
+    This is Garden page.
+  </h1>
+  <Accordion />
 </template>
 
 <style scoped lang="scss">
