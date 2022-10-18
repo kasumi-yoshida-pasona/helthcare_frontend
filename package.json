@@ -8,10 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint --ext .vue, src/",
-    "confirm:stg": "sh confirm.sh STG",
-    "upload:stg": "aws s3 sync --delete --exact-timestamps dist s3://XXXXXXXX --profile testUser",
-    "clear:stg": "aws cloudfront create-invalidation --distribution-id XXXXXXXX --paths '/*' --profile testUser",
-    "deploy:stg": "run-s confirm:stg build upload:stg clear:stg"
+    "deploy:stg": "bash deploy-stg.sh"
   },
   "dependencies": {
     "axios": "^1.1.3",

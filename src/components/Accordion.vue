@@ -5,9 +5,7 @@
     <input id="block-01" type="checkbox" class="toggle" />
     <label class="Label" for="block-01">タイトル１</label>
     <div class="content">
-      <p>
-        ここにお知らせ本文が入りますーここにお知らせ本文が入りますーここにお知らせ本文が入りますーここにお知らせ本文が入りますーここにお知らせ本文が入りますー
-      </p>
+      <p>デプロイテスト完了</p>
     </div>
     <input id="block-02" type="checkbox" class="toggle" />
     <label class="Label" for="block-02">タイトル２</label>

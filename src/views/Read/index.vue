@@ -1,5 +1,5 @@
 <script setup>
-import Swipe from '@/components/Swipe.vue'
+import Swipe from "@/components/Swipe.vue";
 </script>
 
 <template>
@@ -7,5 +7,4 @@ import Swipe from '@/components/Swipe.vue'
   <Swipe />
 </template>
 
-<style scoped lang="scss">
-</style>
+<style scoped lang="scss"></style>
