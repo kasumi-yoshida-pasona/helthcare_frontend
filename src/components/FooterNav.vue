@@ -1,5 +1,4 @@
-<script setup>
-</script>
+<script setup></script>
 
 <template>
   <footer>
@@ -24,18 +23,18 @@
 </template>
 
 <style scoped lang="scss">
-  footer {
-    background: rgb(255, 223, 223);
-    position: fixed;
-    bottom: 0;
-    height: 100px;
-    width: 100%;
-  }
+footer {
+  background: rgb(255, 223, 223);
+  position: fixed;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+}
 
-  .footer-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100%;
-  }
+.footer-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
 </style>

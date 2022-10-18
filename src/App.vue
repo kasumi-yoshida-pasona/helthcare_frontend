@@ -1,7 +1,7 @@
 <script setup>
-  import { useRoute } from 'vue-router'
-  import Header from './components/Header.vue'
-  import Footer from './components/Footer.vue'
+import { useRoute } from "vue-router";
+import Header from "./components/Header.vue";
+import Footer from "./components/Footer.vue";
 </script>
 
 <template>
@@ -13,8 +13,7 @@
 </template>
 
 <style lang="scss" scoped>
-  .base {
-    height: 100%;
-
-  }
+.base {
+  height: 100%;
+}
 </style>

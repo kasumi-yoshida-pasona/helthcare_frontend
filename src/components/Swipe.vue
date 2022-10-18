@@ -1,13 +1,13 @@
 <script setup>
-import { Navigation, Pagination } from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/vue';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+import { Navigation, Pagination } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/vue";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
-const onReachEnd =() => {
-  console.log('reach end page');
-}
+const onReachEnd = () => {
+  console.log("reach end page");
+};
 </script>
 
 <template>
@@ -16,7 +16,7 @@ const onReachEnd =() => {
       :modules="[Navigation, Pagination]"
       :navigation="true"
       :pagination="{
-        type: 'fraction',
+        type: 'fraction'
       }"
       @reachEnd="onReachEnd"
     >
@@ -38,7 +38,7 @@ const onReachEnd =() => {
   + .red {
     background-color: rgb(163, 83, 83);
   }
-  +.yellow {
+  + .yellow {
     background-color: rgb(207, 230, 160);
   }
 }

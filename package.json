@@ -6,9 +6,15 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint --ext .vue, src/",
+    "confirm:stg": "sh confirm.sh STG",
+    "upload:stg": "aws s3 sync --delete --exact-timestamps dist s3://XXXXXXXX --profile testUser",
+    "clear:stg": "aws cloudfront create-invalidation --distribution-id XXXXXXXX --paths '/*' --profile testUser",
+    "deploy:stg": "run-s confirm:stg build upload:stg clear:stg"
   },
   "dependencies": {
+    "axios": "^1.1.3",
     "css-loader": "^6.7.1",
     "pinia": "^2.0.23",
     "swiper": "^8.4.4",
@@ -18,6 +24,8 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^3.1.0",
+    "eslint": "^8.25.0",
+    "eslint-plugin-vue": "^9.6.0",
     "sass": "^1.55.0",
     "sass-loader": "^10.3.1",
     "vite": "^3.1.0"
